@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROmovie - Онлайн кінотеатр</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PROmovie</div>
+
+            <!-- Горизонтальна навігація -->
+    <nav class="nav">
+        <a href="index.html" class="nav-item active">Головна</a>
+        <a href="about.html" class="nav-item">Про кінотеатр</a>
+        <a href="movie.html" class="nav-item">Афіша</a>
+        <a href="cart.html" class="nav-item">Корзина</a>
+    </nav>
+
+        <div class="burger-menu" data-menu-open>
+            <img src="assets/icons/burger-menu.svg" alt="Menu">
+        </div>
+
+        
+        
+    </header>
+
+
+
+    <!-- Бургер-меню -->
+    <nav class="mobile-menu" data-menu>
+        <button class="close-menu" data-menu-close>&#10005;</button>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link active">Головна</a></li>
+            <li><a href="about.html" class="menu-link">Про кінотеатр</a></li>
+            <li><a href="movie.html" class="menu-link">Афіша</a></li>
+            <li><a href="cart.html" class="menu-link">Корзина</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+    <picture>
+        <!-- Головний банер -->
+        <section class="banner">
+        <!-- Зображення для планшетів -->
+        <source srcset="assets/images/banner-tablet.jpg" media="(min-width: 768px)">
+        <!-- Зображення для мобільних -->
+        <source srcset="assets/images/banner.jpg" media="(max-width: 767px)">
+        <!-- Загальне зображення -->
+        <img src="assets/images/banner-desktop.jpg" alt="Banner">
+    </picture>
+            <div class="banner-text">
+                ЗНАЙДЕТЬСЯ ФІЛЬМ ДЛЯ КОЖНОГО
+            </div>
+        </section>
+
+        <!-- Інформаційний блок -->
+        <section class="info">
+            <div class="info-content">
+                <img src="assets/images/info.jpg" alt="Popcorn" class="info-image">
+                <div class="info-text">
+                    <h2>НАЙКРАЩИЙ КІНОТЕАТР ТВОГО МІСТА</h2>
+                    <p class="info-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio vestibulum, bibendum nunc sed, posuere eros. Nullam sodales ligula sed molestie varius. Donec non convallis libero, vitae vestibulum diam.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Афіша -->
+        <section class="schedule">
+            <h2 class="schedule-text">АФІША</h2>
+            <div class="tabs">
+                <button class="tab active">Сьогодні</button>
+                <button class="tab">Завтра</button>
+                <button class="tab">Післязавтра</button>
+            </div>
+            <div class="movie-cards">
+                <div class="movie-card">
+                    <a href="movie.html">
+                        <img src="assets/images/movie1.jpg" alt="Movie 1">
+                    </a>
+                    <h3>31 ГРУДНЯ</h3>
+                    <p>Сеанси: <span>2D (зал 1)</span></p>
+                    <div class="sessions">
+                        <button class="session">14:30</button>
+                        <button class="session">16:30</button>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <a href="movie.html">
+                        <img src="assets/images/movie2.jpg" alt="Movie 2">
+                    </a>
+                    <h3>МУФАСА</h3>
+                    <p>Сеанси: <span>2D (зал 2)</span></p>
+                    <div class="sessions">
+                        <button class="session">14:30</button>
+                        <button class="session">18:30</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer-title">PROmovie</h3>
+        <p class="footer-address">м. Київ, пр-т Лесі Українки, 10</p>
+        <p class="footer-contact">
+            <a href="mailto:info@promovie.com">info@promovie.com</a><br>
+            +38 096 111 11 11
+        </p>
+        <h4 class="footer-subtitle">ПРИЄДНУЙТЕСЬ</h4>
+        <div class="footer-socials">
+            <a href="#" class="social-link">
+                <img src="assets/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/icons/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/icons/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+        <form class="footer-form">
+            <p class="footer-note">ДІЗНАВАЙТЕСЬ ПЕРШИМИ ПРО НОВИНКИ КІНО:</p>
+            <input type="email" placeholder="E-mail" class="footer-input">
+            <button type="submit" class="footer-button">
+                Підписатися
+                <img src="assets/icons/arrow.svg" alt="Arrow">
+            </button>
+        </form>
+
+    </footer>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

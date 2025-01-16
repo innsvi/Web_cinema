@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROmovie - Онлайн кінотеатр</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PROmovie</div>
+
+ <!-- Горизонтальна навігація -->
+    <nav class="nav">
+        <a href="index.html" class="nav-item">Головна</a>
+        <a href="about.html" class="nav-item">Про кінотеатр</a>
+        <a href="movie.html" class="nav-item active">Афіша</a>
+        <a href="cart.html" class="nav-item">Корзина</a>
+    </nav>
+
+        <div class="burger-menu" data-menu-open>
+            <img src="assets/icons/burger-menu.svg" alt="Menu">
+        </div>
+    </header>
+    
+    <!-- Бургер-меню -->
+    <nav class="mobile-menu" data-menu>
+        <button class="close-menu" data-menu-close>&#10005;</button>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link">Головна</a></li>
+            <li><a href="about.html" class="menu-link">Про кінотеатр</a></li>
+            <li><a href="movie.html" class="menu-link active">Афіша</a></li>
+            <li><a href="cart.html" class="menu-link">Корзина</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+                <!-- Головний банер -->
+                <section class="banner">
+                    <picture>
+                        <!-- Головний банер -->
+                        <section class="banner">
+                        <!-- Зображення для планшетів -->
+                        <source srcset="assets/images/banner-tablet.jpg" media="(min-width: 768px)">
+                        <!-- Зображення для мобільних -->
+                        <source srcset="assets/images/banner.jpg" media="(max-width: 767px)">
+                        <!-- Загальне зображення -->
+                        <img src="assets/images/banner-desktop.jpg" alt="Banner">
+                    </picture>
+                    <div class="banner-text">
+                        ЗНАЙДЕТЬСЯ ФІЛЬМ ДЛЯ КОЖНОГО
+                    </div>
+                </section>
+
+
+
+    
+
+
+                 <!-- Картка фільму -->
+        <section class="movie-details">
+            <div class="movie-poster">
+                <img src="assets/images/movie-poster.jpg" alt="Постер фільму">
+            </div>
+            <div class="movie-info">
+                <h1 class="movie-title">31 ГРУДНЯ</h1>
+                <p class="movie-description">
+                    Потяг у 31 грудня мав стати звичайним, тихим рейсом, принаймні так вважав провідник Микола Іванович...
+                </p>
+                <ul class="movie-meta">
+                    <li><strong>РІК:</strong> 2025</li>
+                    <li><strong>ЖАНР:</strong> комедія</li>
+                    <li><strong>МОВА:</strong> українська</li>
+                    <li><strong>КРАЇНА:</strong> Україна</li>
+                </ul>
+                <h2>Сеанси:</h2>
+                <div class="movie-sessions">
+                    <button class="session active">14:30</button>
+                    <button class="session">16:30</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="hall">
+            <h2 class="hall-title">Оберіть місця:</h2>
+            <div class="hall-seats">
+                <div class="seat-row" data-row="3">
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat occupied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                </div>
+                <div class="seat-row" data-row="2">
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                </div>
+
+                <div class="seat-row" data-row="1">
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                    <svg class="seat available" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="20" height="20" rx="4"></rect>
+                    </svg>
+                </div>
+            </div>
+
+                <!-- Екран -->
+    <div class="screen"></div>
+
+            <button class="submit-order">ЗАМОВИТИ</button>
+        </section>
+
+    
+
+
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer-title">PROmovie</h3>
+        <p class="footer-address">м. Київ, пр-т Лесі Українки, 10</p>
+        <p class="footer-contact">
+            <a href="mailto:info@promovie.com">info@promovie.com</a><br>
+            +38 096 111 11 11
+        </p>
+        <h4 class="footer-subtitle">ПРИЄДНУЙТЕСЬ</h4>
+        <div class="footer-socials">
+            <a href="#" class="social-link">
+                <img src="assets/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/icons/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/icons/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+        <form class="footer-form">
+            <p class="footer-note">ДІЗНАВАЙТЕСЬ ПЕРШИМИ ПРО НОВИНКИ КІНО:</p>
+            <input type="email" placeholder="E-mail" class="footer-input">
+            <button type="submit" class="footer-button">
+                Підписатися
+                <img src="assets/icons/arrow.svg" alt="Arrow">
+            </button>
+        </form>
+
+    </footer>
+    
+    
+    <script src="js/script.js"></script>
+    <script src="js/seat-selection.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROmovie - Онлайн кінотеатр</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PROmovie</div>
+
+                            <!-- Горизонтальна навігація -->
+    <nav class="nav">
+        <a href="index.html" class="nav-item">Головна</a>
+        <a href="about.html" class="nav-item">Про кінотеатр</a>
+        <a href="movie.html" class="nav-item">Афіша</a>
+        <a href="cart.html" class="nav-item active">Корзина</a>
+    </nav>
+
+        <div class="burger-menu" data-menu-open>
+            <img src="assets/icons/burger-menu.svg" alt="Menu">
+        </div>
+    </header>
+    
+    <!-- Бургер-меню -->
+    <nav class="mobile-menu" data-menu>
+        <button class="close-menu" data-menu-close>&#10005;</button>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link ">Головна</a></li>
+            <li><a href="about.html" class="menu-link">Про кінотеатр</a></li>
+            <li><a href="movie.html" class="menu-link">Афіша</a></li>
+            <li><a href="cart.html" class="menu-link active">Корзина</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Головний банер -->
+        <section class="banner">
+            <picture>
+                <!-- Головний банер -->
+                <section class="banner">
+                <!-- Зображення для планшетів -->
+                <source srcset="assets/images/banner-tablet.jpg" media="(min-width: 768px)">
+                <!-- Зображення для мобільних -->
+                <source srcset="assets/images/banner.jpg" media="(max-width: 767px)">
+                <!-- Загальне зображення -->
+                <img src="assets/images/banner-desktop.jpg" alt="Banner">
+            </picture>
+            <div class="banner-text">
+                ЗНАЙДЕТЬСЯ ФІЛЬМ ДЛЯ КОЖНОГО
+            </div>
+        </section>
+
+        <section class="cart">
+            <h1 class="cart-title">Корзина</h1>
+            <div class="cart-content">
+                <div class="cart-movie">
+                    <h2 id="cart-movie-title"></h2>
+                    <p id="cart-session"></p>
+                </div>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Ряд</th>
+                            <th>Місце</th>
+                            <th>Ціна (грн)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Тут з'являться квитки -->
+                    </tbody>
+                </table>
+                <div class="cart-total">
+                    <p>Загальна вартість: <span id="cart-total">0</span> грн</p>
+                </div>
+            </div>
+
+            <div class="cart-total">
+                <p>Загальна вартість: <span id="cart-total">0</span> грн</p>
+                <button class="pay-button">Оплатити</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer-title">PROmovie</h3>
+        <p class="footer-address">м. Київ, пр-т Лесі Українки, 10</p>
+        <p class="footer-contact">
+            <a href="mailto:info@promovie.com">info@promovie.com</a><br>
+            +38 096 111 11 11
+        </p>
+        <h4 class="footer-subtitle">ПРИЄДНУЙТЕСЬ</h4>
+        <div class="footer-socials">
+            <a href="#" class="social-link">
+                <img src="assets/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/icons/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/icons/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+        <form class="footer-form">
+            <p class="footer-note">ДІЗНАВАЙТЕСЬ ПЕРШИМИ ПРО НОВИНКИ КІНО:</p>
+            <input type="email" placeholder="E-mail" class="footer-input">
+            <button type="submit" class="footer-button">
+                Підписатися
+                <img src="assets/icons/arrow.svg" alt="Arrow">
+            </button>
+        </form>
+
+    </footer>
+    
+    
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
